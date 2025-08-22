@@ -1,7 +1,7 @@
 $(window).on("scroll",function(){
 		//fadein
 	$('[data-fadeIn]').each(function(index,el){
-		if($(window).scrollTop()>($(el).offset().top - $(window).height() / 1.65)){
+		if($(window).scrollTop()>($(el).offset().top - $(window).height() / 1.25)){
 			$(el).addClass('is_over');
 		}
 	})
@@ -53,4 +53,5 @@ $(window).resize(function(){
                     </div>`
     );
   }
+
 })
