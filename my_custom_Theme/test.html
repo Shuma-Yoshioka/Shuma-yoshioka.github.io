@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
+    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/css/style.css';?>"> -->
+    <?php wp_deregister_script('jquery');?>
+    <?php wp_head(); ?>
+</head>
+
+     <main id="index">
+        <div class="top-inner">
+            <h1 class="myname-en">HINATA NINJA</h1>
+            <div class="myname-ja">忍者 日向</div>
+        </div>
+        <div class="myimg">
+            <img src="<?php echo get_template_directory_uri().'/assets/img/home.png';?>" alt="home">
+        </div>
+        <div class="inner">
+            <ul class="fst-section">
+                <li  class="self-introduction-li"> 
+                    <h2 class="self-introduction-body">As a digital designer, I focus on producing top-notch and impactful digital experiences.</h2>
+                </li>
+                <li class="my-data">
+                    <div class="my-data-title">私について</div>
+                    <ul class="my-data-sns">
+                        <li><div class="my-data-sns-twi"><img src="<?php echo get_template_directory_uri().'/assets/img/ri_twitter.png';?>" alt="twitter"></div></li>
+                        <li><div class="my-data-sns-ins"><img src="<?php echo get_template_directory_uri().'/assets/img/ri_instagram.png';?>" alt="instagram"></div></li>
+                        <li><div class="my-data-sns-ytb"><img src="<?php echo get_template_directory_uri().'/assets/img/ri_youtube.png';?>" alt="youtube"></div></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="inner">
+            <ul class="snd-section">
+                <li class="Ican-li">
+                    <div class="my-data-title">
+                        <p>私のできること</p>
+                        <div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>    
+                   </div>
+                </li>
+                <li class="design-box"><ul class="design-list design-list-1">
+                    <li>
+                        <section class="design-textbox">
+                            <h2 class="design-textbox-title">Digital Design</h2>
+                            <p class="design-detail">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="design-textbox">
+                            <h2 class="design-textbox-title">Art Design</h2>
+                            <p class="design-detail">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </section>
+                    </li></ul>
+                    <ul class="design-list design-list-2">
+                    <li>
+                        <section class="design-textbox">        
+                            <h2 class="design-textbox-title">Interaction Design</h2>
+                            <p class="design-detail">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="design-textbox">        
+                            <h2 class="design-textbox-title">Motion Design</h2>
+                            <p class="design-detail">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </section>
+                    </li>
+                </ul></li>
+            </ul>
+        </div>
+
+    </main>
