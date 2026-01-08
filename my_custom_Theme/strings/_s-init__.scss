@@ -1,0 +1,132 @@
+body{
+    font-family:  'Inter','Noto Sans JP', sans-serif;
+    color: #1e1e21;
+}
+.myname-en{
+    font-size: 192px;
+    font-weight: 600;
+}
+.myname-ja{
+    font-size: 32px;
+    color: #404040;
+    font-weight: 600;
+}
+.self-introduction-body{
+    font-size: 90px;
+    font-weight: 600;
+}
+.my-data-title{
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    & span{
+        background: #1e1e21;
+        width: 15px;
+        height: 3px;
+        display: inline-block;
+        &:first-of-type{
+            transform: translate(50px,-7px) rotate(90deg);
+        }
+        &:nth-of-type(2){
+            transform: translate(20.5px,-7px) rotate(45deg);
+            width: 18px;
+        }
+    }
+}
+.design-textbox-title{
+    font-size: 45px;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+.design-detail{
+    font-size: 24px;
+    line-height: 1.6;
+    color: #404040;
+}
+.about-text{
+    font-size: 24px;
+    line-height: 1.6;
+}
+.bph{
+    font-size: 96px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.my-appeal{
+    font-size: 64px;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+.work-title{
+    font-size: 96px;
+    font-weight: 600;
+}
+.da{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.talk{
+    font-size: 168px;
+    font-weight: 600;
+    margin: 0 64px 16px 64px;
+}
+@media screen and (max-width:1280px){
+    .myname-en{
+        font-size: 80px;
+        line-height: 1.1;
+        margin-bottom: 7px;
+    }
+    .myname-ja{
+        font-size: 22px;
+    }
+    .self-introduction-body{
+        font-size: 48px;
+    }
+    .my-data-title{
+        padding-bottom: 19px;
+        & span{
+            width: 12px;
+            &:first-of-type{
+                transform: translate(46px,-6px) rotate(90deg);
+            }
+            &:nth-child(2){
+                transform: translate(20px,-6px) rotate(45deg);
+                width: 18px;
+            }
+        }
+    }
+    .my-appeal{
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    .design-textbox-title{
+        font-size: 32px;
+        letter-spacing: -1px;
+    }
+    .design-detail,.about-text{
+        font-size: 20px;
+        }
+        
+
+    .bph{
+        font-size: 64px;
+        margin-bottom: 40px;
+    }
+
+    .work-title{
+        font-size: 48px;
+    }
+
+    .da{
+        font-size: 18px;
+    }
+
+    .talk{
+        font-size: 64px;
+        margin: 0 0 8px 0;
+    }
+
+}

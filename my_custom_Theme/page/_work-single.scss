@@ -1,0 +1,156 @@
+#work-single{
+    .wrapper{
+        margin: 64px;
+    }
+    .ws{
+        &-header{
+            display: flex;
+        }
+        &-data{
+            width: calc(30% - 64px);
+            & tr{
+                display: flex;
+                padding: 20px 0;
+                justify-content: space-between;
+                border-bottom: 2px solid #000;
+            }
+        }
+        &-inner{
+        margin:64px 64px 0 64px;
+        }
+    }
+
+    .my-appeal{
+        width: 70%;
+        font-size: 80px;
+        margin-right: 64px;
+        padding: 0;
+    }
+    .fst-section{
+        &-fstli{
+            width:30%;
+            position: relative;
+            padding-right: 64px;
+            border-right: 2px solid #000;
+        }
+        &-sndli{
+            width: 70%;
+        }
+    }
+    .way{
+        margin-left: 64px;
+        &-detail{
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        &-text{
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        & li:first-child{
+            padding-bottom: 64px;
+            border-bottom: 2px solid #000;
+        }
+        & li:nth-child(2){
+            padding: 64px 0;
+            border-bottom: 2px solid #000;
+        }
+        & li:last-child{
+            padding-top: 64px;
+        }
+    }
+    .design-textbox-title{
+        font-size: 48px;
+    }
+    .p-inner{
+        margin: 64px 64px 48px 64px;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .g-img img{
+        width:100%;
+    }
+    @media screen and (max-width:1280px) {
+        main{
+            margin-top:55px;
+        }
+        .wrapper{
+            margin: 0;
+        }
+        .ws{
+            padding: 0;
+            &-header{
+                flex-direction: column;
+            }
+            &-data{
+                width: auto;
+                margin: 25px 20px;
+            }
+            &-inner{
+                margin:42px 20px;
+            }
+    
+        }
+        .myname-en{
+            margin:30px 30px 10px 30px;
+        }
+
+        
+        .my-appeal{
+            width: auto;
+            margin: 0 24px;
+            font-size: 23.59px;
+        }
+        .fst-section{
+            flex-direction: column;
+            &-fstli{
+                width: auto;
+                border-right: none;
+                padding-right: 0;
+                margin-bottom: 71px;
+            }
+            &-sndli{
+                width: auto;
+            }
+        }
+        .way{
+            margin-left: 0;
+            &-detail{
+                margin-bottom: 11px;
+            }
+            & li:first-child{
+                padding-bottom: 27px;
+                border-bottom: 1px solid #000;
+            }
+            & li:nth-child(2),& li:last-child{
+                padding: 29px 0 27px 0;
+                border-bottom: 1px solid #000;
+            }
+        }
+        .design-textbox-title{
+            font-size: 32px;
+            padding-bottom: 11px;
+        }
+        .p-inner{
+            margin: 16px 20px 19px 20px;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            & span{
+                background: #000;
+                width: 12px;
+                height: 3px;
+                display: inline-block;
+                &:first-child{
+                    transform: translate(41px,-5px) rotate(90deg);
+                }
+                &:nth-child(2){
+                    transform: translate(17px,-6px) rotate(45deg);
+                    width: 15px;
+                }
+            }            
+        }
+    
+    }
+}
