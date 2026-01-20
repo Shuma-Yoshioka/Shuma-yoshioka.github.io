@@ -1,5 +1,7 @@
 公開しているページ:https://shuma-yoshioka.github.io/index.html
+こちらは、スクールのテストで実際に提出したwebサイトです。
 
-
-
-cafe_ninja、catbell_theme、my_custom_Theme：それぞれ、カフェサイト、猫ちゃんのお店、ポートフォリオのページをwordpressのテーマとして作成しました。
+下記は、wordpressのテーマとして作成しました。
+cafe_ninja：カフェサイト
+catbell_theme：猫ちゃんのお店
+my_custom_Theme：ポートフォリオ
