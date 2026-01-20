@@ -1,0 +1,299 @@
+@use"variable" as f;
+
+html{
+  scroll-padding-top: 80px;
+}
+a{
+  display: inline-block;
+}
+p{
+  letter-spacing: 1px;
+}
+.mv{
+  display: flex;
+  margin-bottom: 120px;
+  & img{
+    width: calc(100% / 3);
+  }
+}
+.wrap{
+  @include f.wrap;
+  padding-bottom: 120px;
+}
+main{
+  margin-top: 60px;
+}
+
+[data-fadeIn]{
+    opacity: 0;
+    transition: all 1.6s;
+    transform: translateY(150px);
+}
+[data-fadeIn].is_over{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.table_of_contents{
+  margin-bottom: 128px;
+  & .explanation_text{
+    width: 80%;
+    margin: 0 auto 64px;
+
+  }
+
+}
+.section_title{
+  font-size: 34px;
+  text-align:center;
+  &_sub{
+    font-size: 12px;
+    text-align:center;
+    margin-bottom: 28px;
+  }
+}
+
+.menu{
+  display: flex;
+}
+.btn{
+  position: relative;
+  background-color: f.$bgc2;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px #1f1f1f;
+  &_jump{
+    margin-right: 32px;
+    width: calc(100% - 64px);
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 20px;
+      &:last-child{
+        margin-right: 0;
+      }
+  }
+
+  &_arrow{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    &_back{
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      border-radius: 50px;
+    }
+    &_drop{
+      display: inline-block;
+      background-color: #000;
+      width: 12px;
+      height: 3px;
+      border-radius: 50px;
+      &:first-child{
+          transform: translate(5px,-30px) rotate(45deg);
+      }
+      &:last-child{
+          transform: translate(-4px,-30px) rotate(-45deg);
+      }
+    }
+  }
+}
+.arrow{
+  display: inline-block;
+
+}
+.cuisine{
+  margin-bottom: 120px;
+  &_img{
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    & img{
+      height: 378px;
+    }
+  }
+}
+.source{
+  text-align: right;
+  margin-bottom: 64px;
+  & a{
+    @include f.have_link;
+  }
+}
+.reason{
+  display: flex;
+  margin-bottom: 64px;
+  justify-content: space-between;
+  &:nth-child(even){
+    flex-direction: row-reverse;
+  }
+  &:last-child{
+    margin-bottom: 0;
+  }
+  &_img img{
+    width: 100%;
+    height: 288px;
+  }
+  &_text{
+    position: relative;
+    width: 512px;
+    &_number{
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    & .btn{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      @include f.m_size;
+    }
+  }
+}
+
+
+.arrange_list{
+  display: flex;
+}
+.recipe{
+  width: calc(100% / 3);
+  margin-right: 12px;
+    background-color: #ededed;
+  &_img img{
+    width: 100%;
+  }
+  &_inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 300px;
+  }
+  &:last-child{
+    margin-right: 0;
+  }
+  &_text{
+    margin: 16px;
+  }
+  &_name{
+    font-size: 24px;
+  }
+  & .explanation_text{
+    padding-top: 8px;
+    text-align: left;
+    & a{
+      @include f.have_link;
+    }
+  }
+  & .btn{
+    @include f.m_size;
+    margin: 0 auto 10px;
+  }
+
+}
+
+
+@media screen and (max-width:1066px) {
+  .wrap{
+    @include f.wrapsp;
+  }
+
+  .menu{
+    flex-direction: column;
+  }
+  .btn_jump{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 16px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .cuisine_img{
+    & img {
+    width: 47%;
+    height: 30%;
+    }
+  }  
+
+  .reason{
+    flex-direction: column;
+    &:nth-of-type(even){
+      flex-direction: column;
+    }
+    &_text{
+      width: auto;
+      margin:24px 0 60px;
+      & .btn_link{
+        width: 300px;
+        right: 50%;
+        transform: translate(50%,180%);
+      }
+    }
+    &:last-child{
+      margin-bottom: 120px;
+    }
+    &_img{
+    margin: 0 auto;
+      & img{
+      width: 40vw;
+      height: auto;
+      }
+    }
+  }
+
+
+  .arrange{
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .btn{
+    margin-bottom: 16px;
+    &_jump{
+      width: auto;
+      margin-right: 0;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .cuisine_img{
+    flex-direction: column;
+    align-items: center;
+    & img{
+      width: 80%;
+      margin-bottom: 16px;
+    }
+  }
+  .table_of_contents,.cuisine{
+    margin-bottom: 64px;
+  }
+
+  .reason_img img{
+    width: 100%;
+  }
+  .reason_text{
+    width: auto;
+    & #num3{
+    font-size: 48px;
+    }
+
+  }
+
+
+  .arrange_list{
+    flex-direction: column;
+  }
+  .recipe{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 16px;
+    &_inner{
+      height: auto;
+    }
+  }
+}

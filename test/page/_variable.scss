@@ -1,0 +1,47 @@
+$fc1:#fdfdfd;
+$bgc1:#61daff;
+$bgc2:#cfcfcf;
+@mixin wrap{
+  width: 1046px;
+  margin: 0 auto;
+}
+@mixin wrapsp{
+  width: 100%;
+  padding: 0 20px;
+}
+@mixin center{
+  width: auto;
+  margin: 0 auto;
+}
+@mixin m_size{
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  &_arrow_{
+    &next{
+      display: inline-block;
+      background-color: #000;
+      width: 8px;
+      height: 3px;
+      border-radius: 50px;
+      &:first-child{
+        transform: translate(1px,-24px) rotate(45deg);
+      }
+      &:last-child{
+        transform: translate(1px,-69px) rotate(-45deg);
+      }
+    }
+    &back{
+      width: 18px;
+      height: 18px;
+      background-color: #fff;
+      border-radius: 50px;
+    }
+
+  }
+}
+@mixin have_link{
+  color: #00f;
+  text-decoration: underline;
+}
