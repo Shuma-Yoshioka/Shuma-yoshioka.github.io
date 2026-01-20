@@ -9,10 +9,10 @@
 ツール：Windows11、VSCode
 
 ＃コンテンツ
-assets：公開ページに利用している素材のフォルダです。
-cafe_ninja：スクールの動画講義を元に、カフェ(ベーカリー？)のWordPressテーマを制作しました。
-catbell_theme：スクールの動画講義を元に、猫ちゃん専門ペットショップのWordPressテーマを制作しました。
-my_custom_Theme：スクールからのfigmaファイル(webサイトの見本)を元に、ポートフォリオサイトのWordPressテーマを制作しました。
+assets：公開ページに利用している素材のフォルダです。  
+cafe_ninja：スクールの動画講義を元に、カフェ(ベーカリー？)のWordPressテーマを制作しました。  
+catbell_theme：スクールの動画講義を元に、猫ちゃん専門ペットショップのWordPressテーマを制作しました。  
+my_custom_Theme：スクールからのfigmaファイル(webサイトの見本)を元に、ポートフォリオサイトのWordPressテーマを制作しました。  
 index.html：公開しているページのファイルです。
 
 本リポジトリ内の3つのWordPressテーマは、スクールよりポートフォリオとしての公開許可を得ている独自の学習成果物です。
