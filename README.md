@@ -10,6 +10,8 @@
 
 ＃コンテンツ
 assets：公開ページに利用している素材のフォルダです。
-cafe_ninja：スクール教材を元に、カフェ(ベーカリー？)のWordPressテーマを作成しました。
-catbell_theme：スクール教材を元に、猫ちゃん専門ペットショップのWordPressテーマを作成しました。
-my_custom_Theme：スクールからのfigmaファイルを元に、ポートフォリオサイトのWordPressテーマを作成しました。
+cafe_ninja：スクールの動画講義を元に、カフェ(ベーカリー？)のWordPressテーマを制作しました。
+catbell_theme：スクールの動画講義を元に、猫ちゃん専門ペットショップのWordPressテーマを制作しました。
+my_custom_Theme：スクールからのfigmaファイルを元に、ポートフォリオサイトのWordPressテーマを制作しました。
+
+本リポジトリ内の3つのWordPressテーマは、スクールよりポートフォリオとしての公開許可を得ている独自の学習成果物です。
